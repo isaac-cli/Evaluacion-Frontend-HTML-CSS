@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nebula Tech - La tienda de tecnología del futuro. Descubre laptops de alto rendimiento, dispositivos VR de última generación y gadgets inteligentes con envíos a todo el país.">
+    <title>Nebula Tech | Tienda de Tecnología Avanzada</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="header-logo">
+                <span class="logo-icon"><i data-lucide="orbit"></i></span>
+                <span class="logo-text">NEBULA<span class="logo-accent">TECH</span></span>
+            </a>
+
+            <!-- NAVIGATION -->
+            <nav class="main-nav" id="main-navigation">
+                <ul>
+                    <li><a href="#" class="nav-link active">Inicio</a></li>
+                    <li><a href="#products-section" class="nav-link">Productos</a></li>
+                    <li><a href="#contact-section" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- ACTIONS -->
+            <div class="header-actions">
+                <button class="action-btn" id="theme-toggle" aria-label="Cambiar tema">
+                    <i data-lucide="sun" class="icon-sun"></i>
+                    <i data-lucide="moon" class="icon-moon"></i>
+                </button>
+                <button class="action-btn" id="user-btn" aria-label="Cuenta de usuario">
+                    <i data-lucide="user"></i>
+                </button>
+                <button class="action-btn cart-trigger" id="cart-btn" aria-label="Ver carrito">
+                    <i data-lucide="shopping-cart"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero-section">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Tecnología de Próxima Generación</span>
+            <h1 class="hero-title">Eleva tu Experiencia <span class="gradient-text">Digital</span></h1>
+            <p class="hero-subtitle">Equipos diseñados para creadores, profesionales y entusiastas de la tecnología. Explora el futuro hoy.</p>
+            <div class="hero-actions-container">
+                <a href="#products-section" class="btn btn-primary">Ver Catálogo</a>
+                <a href="#contact-section" class="btn btn-secondary">Saber Más</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card-glow"></div>
+            <!-- Dynamic representation of tech device -->
+            <div class="hero-card">
+                <div class="card-chip"></div>
+                <div class="card-logo"><i data-lucide="orbit"></i> NEBULA</div>
+                <div class="card-number">•••• •••• •••• 2086</div>
+                <div class="card-footer">
+                    <div>
+                        <span class="card-label">TITULAR</span>
+                        <span class="card-val">EXPLORER</span>
+                    </div>
+                    <div>
+                        <span class="card-label">RANGO</span>
+                        <span class="card-val">PREMIUM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- PRODUCTS SECTION -->
+        <section class="products-section" id="products-section">
+            <div class="section-header">
+                <span class="section-tag">Novedades</span>
+                <h2 class="section-title">Productos Destacados</h2>
+                <p class="section-subtitle">Selección exclusiva de nuestros dispositivos más vendidos e innovadores.</p>
+            </div>
+
+            <!-- FLEXBOX PRODUCTS CONTAINER -->
+            <div class="products-container" id="products-flexbox">
+                <!-- Product 1 -->
+                <article class="product-card" id="prod-laptop">
+                    <div class="product-img-wrapper">
+                        <div class="product-glow"></div>
+                        <img src="assets/laptop.webp" alt="Nebula Pro Laptop" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80'">
+                        <span class="product-badge">Premium</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Nebula Pro Laptop</h3>
+                        <p class="product-desc">Intel i9, 32GB RAM, 1TB SSD. Diseñada para cargas de trabajo exigentes y gaming ultra fluido.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">$1,499.00</span>
+                            <button class="btn-add-to-cart" data-id="1" data-name="Nebula Pro Laptop" data-price="1499.00" aria-label="Añadir Nebula Pro Laptop al carrito">
+                                <i data-lucide="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card" id="prod-vr">
+                    <div class="product-img-wrapper">
+                        <div class="product-glow"></div>
+                        <img src="assets/vr.webp" alt="Quantum VR Headset" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=600&q=80'">
+                        <span class="product-badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Quantum VR Headset</h3>
+                        <p class="product-desc">Pantallas duales de 4K, 120Hz y seguimiento ocular avanzado. Sumérgete en el metaverso con total realismo.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">$599.00</span>
+                            <button class="btn-add-to-cart" data-id="2" data-name="Quantum VR Headset" data-price="599.00" aria-label="Añadir Quantum VR Headset al carrito">
+                                <i data-lucide="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card" id="prod-earbuds">
+                    <div class="product-img-wrapper">
+                        <div class="product-glow"></div>
+                        <img src="assets/earbuds.webp" alt="Nova Wireless Earbuds" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80'">
+                        <span class="product-badge">Novedad</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Nova Wireless Earbuds</h3>
+                        <p class="product-desc">Cancelación de ruido activa híbrida, audio espacial 3D y hasta 40 horas de autonomía total.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">$189.00</span>
+                            <button class="btn-add-to-cart" data-id="3" data-name="Nova Wireless Earbuds" data-price="189.00" aria-label="Añadir Nova Wireless Earbuds al carrito">
+                                <i data-lucide="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card" id="prod-watch">
+                    <div class="product-img-wrapper">
+                        <div class="product-glow"></div>
+                        <img src="assets/watch.webp" alt="Apex Smartwatch" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=600&q=80'">
+                        <span class="product-badge">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Apex Smartwatch</h3>
+                        <p class="product-desc">Pantalla AMOLED siempre encendida, medición de SpO2, GPS integrado y resistencia al agua 5 ATM.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">$249.00</span>
+                            <button class="btn-add-to-cart" data-id="4" data-name="Apex Smartwatch" data-price="249.00" aria-label="Añadir Apex Smartwatch al carrito">
+                                <i data-lucide="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <span class="section-tag">Contacto</span>
+                    <h2 class="contact-title">¿Tienes alguna duda o proyecto en mente?</h2>
+                    <p class="contact-desc">Nuestro equipo de soporte y asesores tecnológicos están listos para ayudarte. Rellena el formulario y te responderemos en menos de 24 horas hábiles.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method-card">
+                            <div class="method-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h4>Escríbenos</h4>
+                                <p>soporte@nebulatech.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method-card">
+                            <div class="method-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h4>Llámanos</h4>
+                                <p>+56 9 1234 5678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="form-name">Nombre Completo</label>
+                            <div class="input-wrapper">
+                                <i data-lucide="user" class="input-icon"></i>
+                                <input type="text" id="form-name" name="name" placeholder="Tu nombre y apellido" required minlength="3">
+                            </div>
+                            <span class="error-msg" id="name-error">El nombre debe tener al menos 3 caracteres</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email">Correo Electrónico</label>
+                            <div class="input-wrapper">
+                                <i data-lucide="mail" class="input-icon"></i>
+                                <input type="email" id="form-email" name="email" placeholder="correo@ejemplo.com" required>
+                            </div>
+                            <span class="error-msg" id="email-error">Introduce un correo electrónico válido</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Mensaje</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i data-lucide="message-square" class="input-icon"></i>
+                                <textarea id="form-message" name="message" placeholder="¿En qué podemos ayudarte?" required minlength="10" rows="4"></textarea>
+                            </div>
+                            <span class="error-msg" id="message-error">El mensaje debe tener al menos 10 caracteres</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="btn-submit-contact">
+                            <span>Enviar Mensaje</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                    
+                    <div id="form-success" class="form-success-alert hidden">
+                        <div class="success-icon"><i data-lucide="check-circle"></i></div>
+                        <h3>¡Mensaje Enviado con Éxito!</h3>
+                        <p>Nos pondremos en contacto contigo lo antes posible. Gracias por escribir a Nebula Tech.</p>
+                        <button class="btn btn-secondary btn-sm" id="btn-reset-form">Enviar otro mensaje</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i data-lucide="orbit"></i></span>
+                    <span class="logo-text">NEBULA<span class="logo-accent">TECH</span></span>
+                </a>
+                <p class="footer-desc">Redefiniendo los estándares de la tecnología de consumo con diseños inspiradores y rendimiento inigualable.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-grid">
+                <div class="footer-links-col">
+                    <h3>Explorar</h3>
+                    <ul>
+                        <li><a href="#hero-section">Inicio</a></li>
+                        <li><a href="#products-section">Productos</a></li>
+                        <li><a href="#contact-section">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir noticias y ofertas exclusivas.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Tu correo" aria-label="Correo para newsletter" id="newsletter-email">
+                        <button class="btn-newsletter" aria-label="Suscribirse" id="newsletter-btn"><i data-lucide="chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nebula Tech. Todos los derechos reservados. Diseñado para la excelencia digital.</p>
+        </div>
+    </footer>
+
+    <!-- SHOPPING CART SLIDE-OVER (DRAWER) -->
+    <div class="drawer" id="cart-drawer" aria-hidden="true">
+        <div class="drawer-overlay" id="cart-overlay"></div>
+        <div class="drawer-content">
+            <div class="drawer-header">
+                <h3>Tu Carrito</h3>
+                <button class="drawer-close" id="cart-close" aria-label="Cerrar carrito">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="drawer-body" id="cart-items-container">
+                <!-- Dynamic cart items will be injected here -->
+                <div class="empty-cart-state" id="empty-cart-message">
+                    <i data-lucide="shopping-bag" class="empty-icon"></i>
+                    <p>Tu carrito está vacío.</p>
+                    <a href="#products-section" class="btn btn-secondary btn-sm cart-trigger">Ver productos</a>
+                </div>
+                <div class="cart-items-list" id="cart-items-list"></div>
+            </div>
+            <div class="drawer-footer hidden" id="cart-footer">
+                <div class="cart-total-row">
+                    <span>Total:</span>
+                    <span class="cart-total-price" id="cart-total-price">$0.00</span>
+                </div>
+                <button class="btn btn-primary btn-block" id="btn-checkout">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- USER LOGIN MODAL -->
+    <div class="modal" id="login-modal" aria-hidden="true">
+        <div class="modal-overlay" id="login-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="login-close" aria-label="Cerrar login">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Iniciar Sesión</h3>
+                <p>Accede a tu cuenta de Nebula Tech</p>
+            </div>
+            <form id="login-form" class="modal-form" novalidate>
+                <div class="form-group">
+                    <label for="login-email">Correo Electrónico</label>
+                    <div class="input-wrapper">
+                        <i data-lucide="mail" class="input-icon"></i>
+                        <input type="email" id="login-email" required placeholder="correo@ejemplo.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Contraseña</label>
+                    <div class="input-wrapper">
+                        <i data-lucide="lock" class="input-icon"></i>
+                        <input type="password" id="login-password" required placeholder="••••••••">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" id="btn-submit-login">Entrar</button>
+                <div class="form-help">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <span>•</span>
+                    <a href="#" id="switch-to-signup">Crear cuenta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
