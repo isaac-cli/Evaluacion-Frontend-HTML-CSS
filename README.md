@@ -92,8 +92,13 @@ Uso:
 Organizar correctamente los archivos del proyecto.
 
 ---
-
-
+### pronmpt EVA2
+ 
+agrega java scripts puro en la pagina dentro de main.js en su carpeta /js, 
+utiliza lety const,
+tambien if, ciclos. como minimo un arreglo y un objeto.
+al igual que vebe invcluir funciones propias y minimo una arrow function, debes utilizar query Selector, addeventlist y modificaion dinamica del HTML.
+obligatoriamente agrega sitema de favoritos, busqueda dinamica ofintrado, render dinamico utilizando JavaScipt
 ## Comandos Git Utilizados
 
 ### Inicialización
